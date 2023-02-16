@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="icon" type="image/png" href="../image/logo123.png">
+		<title>Toys4Pets</title>
+		<link href="../../css/header&footer.css" rel="stylesheet" type="text/css"/>
+<link href="memEdit.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/slider/my-slider.css" rel="stylesheet" />
+<script src="../css/slider/ism-2.2.min.js"></script>
+</head>
+
+<body id="body">
+
+	<nav id="overlay">
+		<img src="../../image/close.svg" class="close-btn" id="close-menu" alt="close-menu">
+		
+		<ul class="pri-menu">
+			<li><a href="../../Product Gallery/Ideas/Ideas.html">Ideas</a>
+				<ul class="duo-menu">
+					<li><a href="../../Product Gallery/Ideas/Ideas.html">Living Room</a></li>						
+				</ul>						
+			</li>
+
+			<li><a href="../Latest/Latest.html">Latest</a>
+				<ul class="duo-menu">
+					<li><a href="../../Latest/Latest/Latest.html#news">News</a></li>
+					<li><a href="../../Latest/Latest/Latest.html#latest">Latest Product</a></li>						
+				</ul>
+			</li>				
+
+			<li><a href="../About Us/About Us.html">About Us</a>
+				<ul class="duo-menu">
+					<li><a href="../location/Store Location-selayang.html">Location</a></li>
+					<li><a href="../../Contact Us/Contact Us/Contact Us.html">Contact Us</a></li>
+				</ul>
+			</li>
+
+			<li><a href="../../FAQ/FAQ/FAQ.html">Support</a>
+				<ul class="duo-menu">
+					<li><a href="../../FAQ/FAQ/FAQ.html">FAQ</a></li>
+					<li><a href="../../Assembly service/Assembly service/Assembly Service.html">Assembly</a></li>
+					<li><a href="../../Feedback/design/Feedback.html">Feedback</a></li>						
+					<li><a href="../../Term _ Condition/design/Term _ Condition.html">Term & Condition</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</nav>
+
+	<header>
+		<a href="../../Homepage/Homepage/Homepage.html" class="logo"><img src="../../image/logo12.png" alt="logo" height="50px"></a>
+
+		<ul>
+			<li><a href="../../Categories/Catagories/Categories.html">Product</a></li>
+			<li><a href="../login/login.html" class="lock-btn" id="lock-btn"><img src="../../image/padlock.svg" height="20px" width="20px"></a></li>
+			<li><a href="../profile/Profile.html" class="profile-btn" id="profile-btn"><img src="../../image/ProfilePic.png" height="20px" width="20px"></a></li>
+			<li><a href="../../cart/cart/cart.html" class="cart-btn"><img src="../../image/shopping-cart.svg" height="20px" width="20px"></a></li>
+			<li><a href="../../Product Compare/Product Compare/Product Compare.html" class="cart-btn"><img src="../../image/balance.svg" height="20px" width="20px"></a></li>
+			<li><a href="../../Wish List/wish list/Wish List.html" class="wishlist-btn"><img src="../../image/wishlist.svg" height="20px" width="20px"></a></li>
+			<li><a href="../location/Store Location-selayang.html" class="location-btn"><img src="../../image/location.svg" height="20px" width="20px"></a></li>
+			<li><img src="../../image/menu.svg" height="20px" width="20px" class="menu-btn" id="open-menu" alt="open-menu"></li>
+		</ul>
+
+	</header>
+<!--section start-->
+<section class="bgroundImg">
+	<hr /><br />
+	<div style="margin: 10px 25% 10px 25%">
+		<div id="my-slider" class="ism-slider" data-image_fx="zoomrotate" data-play_type="loop">
+			<ol>
+				<li><img src="../image/23.jpg"> </li>
+				<li><img src="../image/25.jpg"> </li>
+				<li><img src="../image/26.jpeg"> </li>
+			</ol>
+		</div>
+	</div>
+	<div class="row main">
+		<div class="column left">
+			<h1>Edit</h1>
+			<button class="hyper"><a href="#editPic">Profile Picture</a>
+			</button><br />
+			<br />
+			<button class="hyper"><a href="#editPInfo">Personal Info</a>
+			</button><br />
+			<br />
+			<button class="hyper"><a href="#editAdd">Address Book</a></button>
+			<br />
+			<br />
+			<button class="hyper" onclick="document.getElementById('chgPass').style.display='block'" style="width: auto;">
+			Change Password<i class="fa fa-edit"></i></button>
+			<div id="chgPass" class="modal">
+				<span class="close" onclick="document.getElementById('chgPass').style.display='none'" title="Close Modal">&times;</span>
+				<form action="" class="modal-content">
+					<div class="container">
+						<h1>Change Password</h1>
+						<hr><label for="oldPass"><b>Old Password</b></label>
+						<input id="oldPass" name="oldPass" placeholder="Enter Old Password" required="" type="password"><br />
+						<label><input onclick="showPass()" type="checkbox"><span class="small">Show 
+						Password</span> </label><br />
+						<br />
+						<label for="password"><b>New Password</b></label>
+						<input id="password" name="newPass" placeholder="Enter New Password" required="" type="password"><br />
+						<br />
+						<label for="confirm_password"><b>Re-enter New Password</b></label>
+						<input id="confirm_password" name="reNewPass" placeholder="Re-enter New Password" required="" type="password"><br />
+						<br />
+						<div class="clearfix">
+							<button class="cancelbtn" onclick="document.getElementById('chgPass').style.display='none'" type="button">
+							Cancel</button>
+							<button class="signupbtn" type="submit">Change Password
+							</button></div>
+					</div>
+				</form>
+			</div>
+			<br />
+			<br />
+			<h1>Profile</h1>
+			<button class="hyper"><a href="home.html">Log Out</a></button><br />
+			<br />
+			<button class="hyper"><a href="home.html">Delete User</a></button>
+			<br />
+		</div>
+		<div class="column right">
+			<h1 id="editPic">Membership Profile Edit</h1>
+			<form>
+				<div class="scolumn left" style="background-color: transparent">
+					<img alt="Avatar" class="avatar" src="../image/avatar.png" style="width: 150px">
+				</div>
+				<div class="scolumn right" style="background-color: transparent">
+					<h2>Profile Picture</h2>
+					<a href="">Change Profile Picture</a><br />
+					<br />
+					<a class="fa fa-facebook" href="#"></a>OR
+					<a class="fa fa-google" href="#"></a></div>
+				<div class="clear">
+					<h2 id="editPInfo">Personal Info</h2>
+					<label for="name" title="Name">Name<i class="fa fa-edit"></i></label><br />
+					<input id="name" name="name" placeholder="Edit Name" title="Name" type="text" value="Please enter your name">
+					<br />
+					<br />
+					<label for="email" title="Email Address">Email<i class="fa fa-edit"></i></label><br />
+					<input id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Edit Email Address" required="" title="Email Address" type="email" value="-">
+					<br />
+					<br />
+					<label for="phone" title="Phone Number">Phone No.<i class="fa fa-edit"></i></label><br />
+					<input id="phone" name="phone" placeholder="Edit Phone No." title="Phone Number" type="tel" value="000-000 0000">
+					<br />
+					<br />
+					<label class="pointer" for="birthday">Birthday<i class="fa fa-edit"></i></label><br />
+					<input id="birthday" name="birthday" type="date" value="--/--/----">
+					<br />
+					<br />
+					<label for="gender" title="Gender">Gender</label>
+					<div class="custom-select" style="width: 200px;">
+						<select id="gender">
+						<option value="0">Perfer Not To Say</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="0">Perfer Not To Say</option>
+						</select> </div>
+					<br />
+					<br />
+					<script>
+								
+       						</script>
+				</div>
+				<div>
+					<h2 id="editAdd">Address Book</h2>
+					<label for="homeAdd">
+					<h3>Home &amp; Billing Address</h3>
+					</label><textarea id="homeAdd" name="homeAdd" rows="4">-</textarea> <label for="deliAdd">
+					<h3>Delivery Address</h3>
+					</label><textarea id="deliAdd" name="deliAdd" rows="4">-</textarea> </div>
+				<button style="margin: 0 auto" type="submit">Confirm Changes
+				</button><button class="cancelbtn" type="button">Cancel</button>
+			</form>
+		</div>
+	</div>
+</section>
+<!--section end--><a href="#" class="gotopbtn"><img src="../../image/gotop.svg" alt="to top" height="20px" width="20px"></a>
+		
+        <footer>			
+			<div class="foot" style="height: 144px">
+				<ul>
+          			<li><strong><u>Product</u></strong></li>
+          	        <li><a href="../../Categories/Catagories/Categories.html">Catogaries</a></li>
+          	        <li><a href="../../Latest/Latest/Latest.html">Latest</a></li>
+          	        <li><a href="../../Product Gallery/Ideas/Ideas.html">Ideas</a></li>
+          	  </ul>
+    
+         	   <ul>
+           	        <li><strong><u>Term</u></strong></li>
+            	    <li><a href="../../Return _ Refund/design/Return _ Refund.html">Return & Refund</a></li>
+          	        <li><a href="../../Term _ Condition/design/Term _ Condition.html">Term & Condition</a></li>
+         	   </ul>
+    
+         	   <ul>
+        	        <li><strong><u>Services</u></strong></li>
+          	        <li><a href="../../Assembly service/Assembly service/Assembly Service.html">Assembly</a></li>
+         	        <li><a href="../../FAQ/FAQ/FAQ.html">FAQ</a></li>
+         	        <li><a href="../../Feedback/design/Feedback.html">Feedback</a></li>
+   		        </ul>
+    
+        	    <ul>
+            	    <li><strong><u>About Us</u></strong></li>
+            	    <li><a href="../location/Store Location-selayang.html">Location</a></li>
+            	    <li><a href="../../Contact Us/Contact Us/Contact Us.html">Contact Us</a></li>
+				</ul>
+				
+			</div>
+		</footer>
+<script>
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
+		function showPass() {
+  									var x = document.getElementById("oldPass");
+  									if (x.type === "password") {
+   										x.type = "text";
+  									} else {
+    									x.type = "password";
+  									}
+  									var x = document.getElementById("password");
+  									if (x.type === "password") {
+   										x.type = "text";
+  									} else {
+    									x.type = "password";
+  									}
+  									var x = document.getElementById("confirm_password");
+  									if (x.type === "password") {
+   										x.type = "text";
+  									} else {
+    									x.type = "password";
+  									}
+								}
+								var x, i, j, selElmnt, a, b, c;
+								/*look for any elements with the class "custom-select":*/
+								x = document.getElementsByClassName("custom-select");
+								for (i = 0; i < x.length; i++) {
+  									selElmnt = x[i].getElementsByTagName("select")[0];
+  									/*for each element, create a new DIV that will act as the selected item:*/
+  									a = document.createElement("DIV");
+    								a.setAttribute("class", "select-selected");
+      								a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      								x[i].appendChild(a);
+      								/*for each element, create a new DIV that will contain the option list:*/
+      								b = document.createElement("DIV");
+      								b.setAttribute("class", "select-items select-hide");
+      								for (j = 1; j < selElmnt.length; j++) {
+        								/*for each option in the original select element, create a new DIV that will act as an option item:*/
+        								c = document.createElement("DIV");
+        								c.innerHTML = selElmnt.options[j].innerHTML;
+        								c.addEventListener("click", function(e) {
+            								/*when an item is clicked, update the original select box, and the selected item:*/
+            								var y, i, k, s, h;
+            								s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+            								h = this.parentNode.previousSibling;
+            								for (i = 0; i < s.length; i++) {
+              									if (s.options[i].innerHTML == this.innerHTML) {
+                									s.selectedIndex = i;
+                  									h.innerHTML = this.innerHTML;
+                 									 y = this.parentNode.getElementsByClassName("same-as-selected");
+                  									for (k = 0; k < y.length; k++) {
+                    									y[k].removeAttribute("class");
+                  									}
+                  									this.setAttribute("class", "same-as-selected");
+                  									break;
+                								}
+              								}
+              								h.click();
+          								});
+          								b.appendChild(c);
+        							}
+         							x[i].appendChild(b);
+         							a.addEventListener("click", function(e) {
+             							/*when the select box is clicked, close any other select boxes,and open/close the current select box:*/
+             							e.stopPropagation();
+             							closeAllSelect(this);
+             							this.nextSibling.classList.toggle("select-hide");
+             							this.classList.toggle("select-arrow-active");
+           							});
+       							}
+       							function closeAllSelect(elmnt) {
+         							/*a function that will close all select boxes in the document,except the current select box:*/
+         							var x, y, i, arrNo = [];
+         							x = document.getElementsByClassName("select-items");
+         							y = document.getElementsByClassName("select-selected");
+         							for (i = 0; i < y.length; i++) {
+           								if (elmnt == y[i]) {
+             								arrNo.push(i)
+           								} else {
+             								y[i].classList.remove("select-arrow-active");
+           								}
+         							}
+         							for (i = 0; i < x.length; i++) {
+           								if (arrNo.indexOf(i)) {
+             								x[i].classList.add("select-hide");
+           								}
+         							}
+       							}
+       							/*if the user clicks anywhere outside the select box,then close all select boxes:*/
+       							document.addEventListener("click", closeAllSelect);
+       							
+       							// Get the modal
+					var modal = document.getElementById('chgPass');
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+  						if (event.target == modal) {
+    						modal.style.display = "none";
+  						}
+					}
+			
+			var body = document.getElementById('body');
+			var overlay = document.getElementById('overlay');
+			var closemenu = document.getElementById('close-menu');
+			
+			document.getElementById('open-menu').addEventListener('click',function(){
+				overlay.classList.add('show-menu');
+				body.classList.add('overflow');
+			});
+			
+			document.getElementById('close-menu').addEventListener('click', function(){
+				overlay.classList.remove('show-menu');
+				body.classList.remove('overflow');
+			});
+		</script>
+
+</body>
+
+</html>
